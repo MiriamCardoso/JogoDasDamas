@@ -1,0 +1,61 @@
+.game {
+
+}
+
+.board {
+	width:max-content;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png"); //todo:change download this image
+}
+
+.row {
+	display:flex;
+}
+
+.square {
+	width:50px;
+	height:50px;
+}
+.redSquare {
+	height:75%;
+	width:75%;
+	border-radius:50%;
+	background-color:#4d0000;
+	margin:auto;
+	margin-top:12.5%;
+	border:2x inset;
+}
+.blackSquare {
+	height:75%;
+	width:75%;
+	border-radius:50%;
+	background-color:#262626;
+	margin:auto;
+	margin-top:12.5%;
+	border:2px inset;
+}
+.row:nth-child(even) .square:nth-child(even) {
+	background-color:rgba(255,0,0,0.5);
+}
+.row:nth-child(odd) .square:nth-child(even) {
+	background-color:rgba(0,0,0,0.5);
+}
+.row:nth-child(even) .square:nth-child(odd) {
+	background-color:rgba(0,0,0,0.5);
+}
+.row:nth-child(odd) .square:nth-child(odd) {
+	background-color:rgba(255,0,0,0.5);
+}
+p {
+	color:white;
+	text-align:center;
+}
+.selectedSquare {
+	width:50px;
+	height:50px;
+	box-shadow:#dfff00 0px 0px 10px 4px inset;
+}
+
+.stats p {
+	color:black;
+	text-align:left;
+}
